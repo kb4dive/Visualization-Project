@@ -163,7 +163,7 @@ function pieChart() {
   Plotly.newPlot('myPie', pieData, layout);
 };
 
-d3.csv("/static/data/Restaurants2.csv").then(function(csv) {
+d3.csv("../static/data/Restaurants2.csv").then(function(csv) {
   RestaurantData = csv;
   createMarkers();
   barChart();
